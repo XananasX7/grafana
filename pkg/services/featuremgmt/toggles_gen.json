@@ -2490,6 +2490,21 @@
     },
     {
       "metadata": {
+        "name": "grafana.useDefaultScopesEndpoint",
+        "resourceVersion": "1781620623687",
+        "creationTimestamp": "2026-06-16T14:37:03Z"
+      },
+      "spec": {
+        "description": "Use the find default scope endpoint to seed the initial scope selection when none is set and grafana.enableScopesFirstMode is enabled.",
+        "stage": "experimental",
+        "codeowner": "@grafana/grafana-operator-experience-squad",
+        "frontend": true,
+        "hideFromDocs": true,
+        "expression": "false"
+      }
+    },
+    {
+      "metadata": {
         "name": "grafana.visualDesignRefresh",
         "resourceVersion": "1781257253520",
         "creationTimestamp": "2026-06-12T09:40:53Z"

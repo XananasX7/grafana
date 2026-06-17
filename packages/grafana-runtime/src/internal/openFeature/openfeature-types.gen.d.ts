@@ -50,6 +50,7 @@ declare module "@openfeature/core" {
     | "grafana.unifiedHomepage"
     | "alerting.syncExternalAlertmanager"
     | "grafana.enableScopesFirstMode"
+    | "grafana.useDefaultScopesEndpoint"
     | "grafana.logLevelInference"
     | "plugins.initDataSourcesAsync"
     | "grafana.panelEditNextFeedbackEvent"
