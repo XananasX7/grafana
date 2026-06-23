@@ -2300,11 +2300,14 @@
     {
       "metadata": {
         "name": "grafana.dashboardSettingsRedesign",
-        "resourceVersion": "1779965934743",
-        "creationTimestamp": "2026-05-28T10:58:54Z"
+        "resourceVersion": "1782232195767",
+        "creationTimestamp": "2026-05-28T10:58:54Z",
+        "annotations": {
+          "grafana.app/updatedTimestamp": "2026-06-23 16:29:55.767165 +0000 UTC"
+        }
       },
       "spec": {
-        "description": "Redesigns dashboard settings page into Advanced Settings and gradually moves them to a modal",
+        "description": "Redesigns dashboard settings page into Advanced Settings in a modal window",
         "stage": "GA",
         "codeowner": "@grafana/dashboards-squad",
         "frontend": true,

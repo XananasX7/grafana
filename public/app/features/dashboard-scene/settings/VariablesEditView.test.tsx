@@ -232,7 +232,7 @@ describe('VariablesEditView', () => {
     });
 
     // remove test when we remove the variable tab in dashboard settings
-    it.skip('should show Provisioned by data source section when at least one variable has origin', async () => {
+    it('should show Provisioned by data source section when at least one variable has origin', async () => {
       const variables = variableView.getVariableSet().state.variables;
       const originVariable = new CustomVariable({
         name: 'dsVar',

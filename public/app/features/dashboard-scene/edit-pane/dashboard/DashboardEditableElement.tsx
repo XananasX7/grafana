@@ -23,6 +23,7 @@ import { DashboardDescriptionInput, DashboardTitleInput } from './DashboardBasic
 import { AddFilterButton, DashboardFiltersList } from './DashboardFiltersList';
 import { AddLinkButton, DashboardLinksList } from './DashboardLinksList';
 import { AddVariableButton, DashboardVariablesList } from './DashboardVariablesList';
+import { VariablesDependenciesButton } from '../../variables/VariablesDependenciesButton';
 
 function useEditPaneOptions(
   this: DashboardEditableElement,
@@ -206,6 +207,16 @@ function useVariablesCategory(dashboard: DashboardScene): OptionsPaneCategoryDes
         render: () => <AddVariableButton dashboard={dashboard} />,
       })
     );
+    if ($variables?.state.variables.length) {
+      category.addItem(
+        new OptionsPaneItemDescriptor({
+          title: '',
+          id: 'dashboard-variables-dependencies',
+          skipField: true,
+          render: () => <VariablesDependenciesButton variables={$variables?.state.variables} isInSidebar />,
+        })
+      );
+    }
 
     return [category];
   }, [$variables, addVariableButtonId, variableListId, dashboard]);

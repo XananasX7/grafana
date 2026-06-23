@@ -39,7 +39,7 @@ export const FlagKeys = {
   FlameGraphWithCallTree: "flameGraphWithCallTree",
   /** Enables global and folder-scoped dashboard variables via dashboard.grafana.app */
   GlobalDashboardVariables: "globalDashboardVariables",
-  /** Redesigns dashboard settings page into Advanced Settings and gradually moves them to a modal */
+  /** Redesigns dashboard settings page into Advanced Settings in a modal window */
   GrafanaDashboardSettingsRedesign: "grafana.dashboardSettingsRedesign",
   /** Enables UI changes for integrations that require a scope to always be selected (for example, hides the scope selector's Remove all button) */
   GrafanaEnableScopesFirstMode: "grafana.enableScopesFirstMode",
@@ -247,7 +247,7 @@ export const useFlagGlobalDashboardVariables = (options?: ReactFlagEvaluationOpt
 };
 
 /**
- * Redesigns dashboard settings page into Advanced Settings and gradually moves them to a modal
+ * Redesigns dashboard settings page into Advanced Settings in a modal window
  *
  * **Details:**
  * - flag key: `grafana.dashboardSettingsRedesign`

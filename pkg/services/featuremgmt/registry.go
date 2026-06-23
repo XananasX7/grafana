@@ -3171,7 +3171,7 @@ var (
 		},
 		{
 			Name:        "grafana.dashboardSettingsRedesign",
-			Description: "Redesigns dashboard settings page into Advanced Settings and gradually moves them to a modal",
+			Description: "Redesigns dashboard settings page into Advanced Settings in a modal window",
 			Stage:       FeatureStageGeneralAvailability,
 			Generate:    Generate{React: true},
 			Owner:       grafanaDashboardsSquad,
