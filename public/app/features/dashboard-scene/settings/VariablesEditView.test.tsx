@@ -23,6 +23,8 @@ import { DefaultGridLayoutManager } from '../scene/layout-default/DefaultGridLay
 import { activateFullSceneTree } from '../utils/test-utils';
 
 import { VariablesEditView } from './VariablesEditView';
+import { setTestFlags } from '@grafana/test-utils/unstable';
+import { FlagKeys } from '../../../../../packages/grafana-runtime/src/internal/openFeature/openfeature.gen';
 
 function render(component: React.ReactNode) {
   return RTLRender(
@@ -78,6 +80,12 @@ const runRequestMock = jest.fn().mockReturnValue(
 setRunRequest(runRequestMock);
 
 describe('VariablesEditView', () => {
+  beforeAll(() => {
+    setTestFlags({ [FlagKeys.GrafanaDashboardSettingsRedesign]: false });
+  });
+  afterAll(() => {
+    setTestFlags({});
+  });
   describe('Dashboard Variables state', () => {
     let dashboard: DashboardScene;
     let variableView: VariablesEditView;
