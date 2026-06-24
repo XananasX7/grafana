@@ -12052,8 +12052,14 @@
       "bookmark": {
         "tooltip": "Bookmark {{itemName}}"
       },
+      "hide": {
+        "tooltip": "Hide {{itemName}}"
+      },
       "pin": {
         "tooltip": "Pin {{itemName}}"
+      },
+      "show": {
+        "tooltip": "Show {{itemName}}"
       },
       "unpin": {
         "tooltip": "Unpin {{itemName}}"
@@ -12064,6 +12070,10 @@
     },
     "megamenu": {
       "close": "Close menu",
+      "customise": "Customise menu",
+      "customise-cancel": "Cancel",
+      "customise-done": "Done",
+      "customise-reset": "Reset to default",
       "dialog-label": "Navigation",
       "dock": "Dock menu",
       "hide-unpinned-items": "Hide unpinned items",
