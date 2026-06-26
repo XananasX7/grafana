@@ -4,6 +4,7 @@ import { type NavModel } from '@grafana/data';
 
 export interface PluginPageContextType {
   sectionNav: NavModel;
+  pluginId: string;
 }
 
 export const PluginPageContext = createContext(getInitialPluginPageContext());
@@ -21,8 +22,9 @@ function getInitialPluginPageContext(): PluginPageContextType {
   };
 }
 
-export function buildPluginPageContext(sectionNav: NavModel | undefined): PluginPageContextType {
+export function buildPluginPageContext(sectionNav: NavModel | undefined, pluginId: string): PluginPageContextType {
   return {
     sectionNav: sectionNav ?? getInitialPluginPageContext().sectionNav,
+    pluginId,
   };
 }
